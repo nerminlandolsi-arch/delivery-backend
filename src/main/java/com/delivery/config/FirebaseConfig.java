@@ -34,6 +34,14 @@ public class FirebaseConfig {
                 } else {
                     log.warn("Firebase credentials file not found: {}. Push notifications disabled.", credentialsFile);
                 }
+@PostConstruct
+public void initialize() {
+    try {
+        // code Firebase existant
+    } catch (Exception e) {
+        log.warn("Firebase non configure — notifications desactivees");
+    }
+}
             }
         } catch (IOException e) {
             log.error("Failed to initialize Firebase: {}", e.getMessage());
