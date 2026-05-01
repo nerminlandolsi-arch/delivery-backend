@@ -1,0 +1,29 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE
+.idea/
+*.iml
+*.iws
+.vscode/
+*.class
+*.log
+
+# Secrets - NE JAMAIS COMMITTER
+firebase-service-account.json
+*.pem
+*.key
+
+# Application properties with secrets
+application-prod.properties
+application-secret.properties
+
+# Uploads
+uploads/
+
+# OS
+.DS_Store
+Thumbs.db
