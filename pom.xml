@@ -1,4 +1,4 @@
-[phases.setup]
+﻿[phases.setup]
         nixPkgs = ["jdk17"]
 
         [phases.install]
