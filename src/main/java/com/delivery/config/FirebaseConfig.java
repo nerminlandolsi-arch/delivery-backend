@@ -1,4 +1,4 @@
-package com.delivery.config;
+﻿package com.delivery.config;
 
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
@@ -30,11 +30,11 @@ public class FirebaseConfig {
                     FirebaseApp.initializeApp(options);
                     log.info("Firebase initialized successfully");
                 } else {
-                    log.warn("Firebase credentials file not found — notifications disabled");
+                    log.warn("Firebase credentials file not found â€” notifications disabled");
                 }
             }
         } catch (Exception e) {
-            log.warn("Firebase initialization failed — notifications disabled: {}", e.getMessage());
+            log.warn("Firebase initialization failed â€” notifications disabled: {}", e.getMessage());
         }
     }
 }
